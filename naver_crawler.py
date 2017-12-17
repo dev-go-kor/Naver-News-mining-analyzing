@@ -69,8 +69,8 @@ def get_ranking_news():
 def get_comment(url):
 # later, if it's already crawled, check it's update
     if url.startswith('http://m.news.naver.com/'):
-        #driver = webdriver.PhantomJS(executable_path=r'C:\Users\dev\phantomjs\bin\Phantomjs.exe')
-        driver = webdriver.PhantomJS(executable_path='/usr/local/bin/phantomjs')
+        driver = webdriver.PhantomJS(executable_path=r'C:\Users\dev\phantomjs\bin\Phantomjs.exe')
+        # check your webdriver path
         driver.get(url)
         time.sleep(1)
         tmp_count = '댓글'
